@@ -1,0 +1,33 @@
+{
+  "name": "ch-syntax-highlighting",
+  "displayName": "CH Syntax Highlighting",
+  "description": "Syntax highlighting for the CH language in Visual Studio Code",
+  "version": "1.0.0",
+  "publisher": "G. CENTER",
+  "icon": "icon.png",
+  "main": "./src/settings.js",
+
+  "activationEvents": [
+    "onLanguage:ch"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": ["Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ch",
+        "aliases": ["CH"],
+        "extensions": [".ch"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ch",
+        "scopeName": "source.ch",
+        "path": "./syntaxes/ch.tmLanguage.json"
+      }
+    ]
+  }
+}

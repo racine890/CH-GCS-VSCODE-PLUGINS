@@ -1,0 +1,28 @@
+{
+  "name": "gcs-syntax-highlighting",
+  "displayName": "GCS Syntax Highlighting",
+  "description": "Syntax highlighting for the GCS language in Visual Studio Code",
+  "version": "1.0.0",
+  "publisher": "gcbf",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": ["Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "gcs",
+        "aliases": ["GCS"],
+        "extensions": [".gcs"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "gcs",
+        "scopeName": "source.gcs",
+        "path": "./syntaxes/gcs.tmLanguage.json"
+      }
+    ]
+  }
+}

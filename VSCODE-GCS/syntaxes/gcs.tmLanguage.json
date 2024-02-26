@@ -1,0 +1,56 @@
+{
+  "scopeName": "source.gcs",
+  "patterns": [
+    {
+      "name": "comment.gcs",
+      "match": "#.*"
+    },
+    {
+      "name": "keyword.gcs",
+      "match": "\\b(add|substract|compare|set|if|type|lock|wait|end|display|LoadPic|max|min|create|table|insert|var|section|file|check|SetVar|function|continue|quit|print|LASTRESULT|LASTPATH|FIRSTFILE|LASTFILE|LASTINDEX|write|Get|CreateText|CreateButton|CreateInput|LASTRECT|RemoveAll|SetRect|GetLine|prepare|binary|conversion|convert|decimal|hex|octan|color|ConsoleText|erase|crypt|uncrypt|OpenFile|SaveFile|MessageBox|normalize:|constants:|spliter:|addQuotes:|variable:|command|repeat|multiply|divide|times|stop|repeat|hide|show|random|luck|GetFormResult|GetInput|ResetForm|ResetInput|split|CreateForm|on|execute|seconds|milliseconds|minutes|reverse|free|count|lines|GetData|GetSection|CreateFile|append|then|evaluate|try|else|GetTableElement|of|exit|turn|into|nope|ToolBar|SetEditText|LoadFile|ReadFile|window|destroy|current|ListBox|connect|database|query|with|count|error|LASTERROR|commit|close|reset|SetInputText|define|GetEditText|LoadPic|SetFlag|ClearFlag|CheckFlag|ForEach|LASTLIST|SELECTED|select_all|ConfigInput|ConfigButton|int|string|at|modulo|in|PLATFORM|LASTERROR|LASTCOMPARE|MAIN_ARGS|APP_PATH|ACTUAL_BASE|LASTFUNCTION|LASTINDEX|LASTRECT|LASTEVENTCODE|LASTLIST|LASTTUPLE|LASTEVENTSYM|DISABLED|SELECTED|LASTEVENTX|LASTEVENTY|LASTCLICKEDID|VERSION|SetTreeItem|AddTreeItem|DelTreeItem|GetAllTreeItems|TreeView|addQuotes)\\b",
+      "caseInsensitive": false
+    },
+    {
+      "name": "string-quote.gcs",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.gcs",
+          "match": "''"
+        }
+      ]
+    },
+    {
+      "name": "string-double.gcs",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.gcs",
+          "match": "\\\""
+        }
+      ]
+    },
+    {
+      "name": "special-word.gcs",
+      "match": "^(\\$|\\*)\\w+"
+    },
+    {
+      "name": "string-brackets.gcs",
+      "begin": "\\[",
+      "end": "\\]",
+      "patterns": [
+        {
+          "include": "#comment.gcs"
+        },
+        {
+          "include": "#keyword.gcs"
+        },
+        {
+          "include": "special-word.gcs"
+        }
+      ]
+    }
+  ]
+}
