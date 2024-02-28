@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "publisher": "gcbf",
   "icon": "icon.png",
+  "repository": "https://github.com/racine890/CH-GCS-VSCODE-PLUGINS/tree/main",
   "main": "./src/settings.js",
 
   "activationEvents": [
