@@ -13,13 +13,25 @@
   "engines": {
     "vscode": "^1.0.0"
   },
-  "categories": ["Languages"],
+  "categories": ["Programming Languages"],
   "contributes": {
     "languages": [
       {
         "id": "ch",
         "aliases": ["CH"],
         "extensions": [".ch"]
+      }
+    ],
+    "completionItems": [
+      {
+        "language": "ch",
+        "path": "./completions.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ch",
+        "path": "./snippets.json"
       }
     ],
     "grammars": [

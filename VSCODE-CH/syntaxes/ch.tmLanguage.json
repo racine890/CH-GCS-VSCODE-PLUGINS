@@ -7,7 +7,7 @@
     },
     {
       "name": "keyword.ch",
-      "match": "\\b(use|ch/gcs_version|AppIcon|Title|Width|Size|Height|Onload|Onquit|Text|Input|buttons|Buttons|Button|nb|width|button|size|home|ch|exit|BeginX|Edit|BeginY|EndX|EndY|size|entry|width|main_text_color|main_text_size|debug|OnDisplay|edit_text_color|edit_background|id|width|size|height|entry|X|Y|LB|x|y|id|nb|tk|link|require|debug|Edit|Ondisplay|OnLoad|OnQuit|Game|KeyPress|Objects|Object)\\b",
+      "match": "\\b(use|ch/gcs_version|AppIcon|events|Title|Width|Size|Height|Onload|Onquit|Text|Input|buttons|Buttons|Button|nb|width|button|size|home|ch|exit|BeginX|Edit|BeginY|EndX|EndY|size|entry|width|main_text_color|main_text_size|debug|OnDisplay|edit_text_color|edit_background|Background|Background.x|Background.y|id|width|size|height|entry|X|Y|LB|x|y|id|nb|tk|link|require|debug|Edit|Ondisplay|OnLoad|OnQuit|Game|KeyPress|Objects|Object|entry.size|AskColor)\\b",
       "caseInsensitive": true
     },
     {

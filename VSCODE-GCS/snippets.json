@@ -1,0 +1,135 @@
+{
+  "connect": {
+    "prefix": "SQLite connexion",
+    "body": [
+      "connect database $1",
+      "commit",
+      "close database"
+    ],
+    "description": "SQLite connexion snippet"
+  },
+
+  "connect_mysql": {
+    "prefix": "MySQL connexion",
+    "body": [
+      "connect MySQL with ( 'root', '', 'localhost', '$1' )",
+      "commit",
+      "close database"
+    ],
+    "description": "MySQL connexion snippet"
+  },
+
+  "query": {
+    "prefix": "Select All Query",
+    "body": [
+      "query select_all with $1",
+      "end",
+      "",
+      "[$1]",
+      "select * from myTable ;",
+      "[/$1]",
+      ""
+    ],
+    "description": "Database query to get all"
+  },
+
+  "query_one": {
+    "prefix": "Select One Query",
+    "body": [
+      "query select_one with $1",
+      "end",
+      "",
+      "[$1]",
+      "select * from myTable ;",
+      "[/$1]",
+      ""
+    ],
+    "description": "Database query to get one"
+  },
+
+  "compare": {
+    "prefix": "Comparison between two elements",
+    "body": [
+      "compare $1 0",
+      "if 0 then",
+      "\t#...",
+      "\tend",
+      "end",
+      ""
+    ],
+    "description": "Comparison snippet"
+  },
+
+  "if": {
+    "prefix": "If Snippet",
+    "body": [
+      "if $1 then",
+      "\t# ...",
+      "\tend",
+      ""
+    ],
+    "description": "If function. Takes either 0 (equal), 1(more), 2(less), 3(more or equal), 4(less or equal), 5(different)"
+  },
+
+  "if_evaluate": {
+    "prefix": "If Evaluate Snippet",
+    "body": [
+      "if evaluate('') then",
+      "\n# ...",
+      "\nend",
+      "end"
+    ],
+    "description": "If function. Takes either 0 (equal), 1(more), 2(less), 3(more or equal), 4(less or equal), 5(different)"
+  },
+  
+  "if_func": {
+    "prefix": "If Snippet",
+    "body": [
+      "if $1 do",
+      "end",
+      "",
+      "[@do]",
+      "[/@do]",
+      ""
+    ],
+    "description": "If function. Takes either 0 (equal), 1(more), 2(less), 3(more or equal), 4(less or equal), 5(different)"
+  },
+
+  "config": {
+    "prefix": "Config Text or Image",
+    "body": [
+      "config item $1 fill= 'red'"
+    ],
+    "description": "The id to use must be based on the tk id. You can see it by printing LASTCLICKEDID at a Button-1 event."
+  },
+
+  "GetInput": {
+    "prefix": "Gets and Checks emptyness",
+    "body": [
+      "GetInput $1",
+      "if evaluate({LASTRESULT} == '') then",
+      "\nend",
+      ""
+    ],
+    "description": "Usual check before doing stuff"
+  },
+
+  "evaluate": {
+    "prefix": "Evaluate and save result",
+    "body": [
+      "evaluate $1 =>*evaluated",
+      ""
+    ],
+    "description": "Evaluate and save result"
+  },
+
+  "try": {
+    "prefix": "Error catching",
+    "body": [
+      "try @$1 else @[end]",
+      ""
+    ],
+    "description": "Evaluate and save result"
+  }
+
+}

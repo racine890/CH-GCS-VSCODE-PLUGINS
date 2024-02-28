@@ -5,16 +5,33 @@
   "version": "1.0.0",
   "publisher": "gcbf",
   "icon": "icon.png",
+  "main": "./src/settings.js",
+
+  "activationEvents": [
+    "onLanguage:gcs"
+  ],
   "engines": {
     "vscode": "^1.0.0"
   },
-  "categories": ["Languages"],
+  "categories": ["Programming Languages"],
   "contributes": {
     "languages": [
       {
         "id": "gcs",
         "aliases": ["GCS"],
         "extensions": [".gcs"]
+      }
+    ],
+    "completionItems": [
+      {
+        "language": "gcs",
+        "path": "./completions.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "gcs",
+        "path": "./snippets.json"
       }
     ],
     "grammars": [

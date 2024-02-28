@@ -1,0 +1,17 @@
+{
+    "completions": [
+      {
+        "label": "Title",
+        "kind": "keyword",
+        "insertText": "Title",
+        "documentation": "Sets the title"
+      },
+      {
+        "label": "Width",
+        "kind": "keyword",
+        "insertText": "Width",
+        "documentation": "Sets the screen width"
+      }
+    ]
+  }
+  

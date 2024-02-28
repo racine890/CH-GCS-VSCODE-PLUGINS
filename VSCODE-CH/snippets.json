@@ -1,0 +1,85 @@
+{
+  "tk": {
+    "prefix": "Tk app Base",
+    "body": [
+      "Title: $1",
+      "Width: 500",
+      "Size: 400",
+      "use tk",
+      "AppIcon: icon.png",
+      ""
+    ],
+    "description": "Tk template"
+  },
+
+  "Button": {
+    "prefix": "Tk app Button",
+    "body": [
+      "Button1: Click there",
+      "Button1.id: $1",
+      "$1.x: ",
+      "$1.y: ",
+      "$1.link: ",
+      ""
+    ],
+    "description": "Tk button"
+  },
+
+  "Input": {
+    "prefix": "Tk app Normal Input",
+    "body": [
+      "Input1: Default text",
+      "Input1.id: $1",
+      "$1.x: ",
+      "$1.y: ",
+      ""
+    ],
+    "description": "Tk Input for text"
+  },
+
+  "Input Date": {
+    "prefix": "Tk app Date Input",
+    "body": [
+      "Input1: Default text",
+      "Input1.id: $1",
+      "$1.x: ",
+      "$1.y: ",
+      "$1.type: date",
+      ""
+    ],
+    "description": "Tk Input for dates"
+  },
+
+  "Text": {
+    "prefix": "Tk app Text",
+    "body": [
+      "Text1: ",
+      "Text1.id: $1",
+      "$1.x: ",
+      "$1.y: ",
+      ""
+    ],
+    "description": "Tk text"
+  },
+
+  "func": {
+    "prefix": "Tk function",
+    "body": [
+      "@$1","","end",
+      "[@$1]",
+      "",
+      "[/@$1]",
+      ""
+    ],
+    "description": "Tk function"
+  },
+
+  "func_short": {
+    "prefix": "Tk shortened function",
+    "body": [
+      "@[$1]"
+    ],
+    "description": "Tk function"
+  }
+
+}
