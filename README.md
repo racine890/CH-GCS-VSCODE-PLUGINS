@@ -6,7 +6,7 @@ Installation : <br/>
 - Select the vsix file from the extracted package. <br/>
 <br/>
 Or through VSCode Extensions Market <br/>
-- Search "GCS Syntax Highlighting" and "GCS Syntax Highlighting" <br/>
+- Search "CH Syntax Highlighting" and "GCS Syntax Highlighting" <br/>
 - Install it <br/>
 <br/>
 Please rate us !
